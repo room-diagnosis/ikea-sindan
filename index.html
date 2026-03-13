@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IKEAインテリア診断</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>IKEAインテリア診断</h1>
+</header>
+
+<main>
+
+<div id="quiz">
+
+<p id="progress"></p>
+
+<p id="question"></p>
+
+<div id="choices"></div>
+
+</div>
+
+<div id="result" style="display:none;">
+
+<div class="result-card">
+
+<h2 id="resultTitle"></h2>
+
+<img id="resultImage" src="" alt="result image">
+
+<p id="resultDescription"></p>
+
+<a id="productLink" target="_blank" class="product-button">
+おすすめ商品を見る
+</a>
+
+<button id="shareButton">Xでシェア</button>
+
+<button onclick="restartQuiz()">もう一度診断する</button>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

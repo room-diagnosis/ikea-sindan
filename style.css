@@ -1,0 +1,115 @@
+body{
+font-family:sans-serif;
+background:#f5f5f5;
+margin:0;
+}
+
+/* タイトル */
+header{
+text-align:center;
+padding:20px;
+background:#0058A3;
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+/* 中央配置 */
+main{
+display:flex;
+justify-content:center;
+padding:30px;
+}
+
+/* 診断ボックス */
+#quiz{
+background:white;
+padding:30px;
+width:90%;
+max-width:500px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 結果カード */
+.result-card{
+background:white;
+padding:30px;
+width:90%;
+max-width:500px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* 進行表示 */
+#progress{
+color:#888;
+margin-bottom:10px;
+}
+
+/* 質問 */
+#question{
+font-size:20px;
+margin-bottom:20px;
+}
+
+/* 選択肢 */
+#choices{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+/* ボタン */
+button{
+padding:15px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background:#ffcc00;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.03);
+}
+
+/* 商品ボタン */
+.product-button{
+display:block;
+margin:15px auto;
+padding:12px;
+background:#0058A3;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+/* 画像 */
+img{
+width:100%;
+max-width:320px;
+height:200px;
+object-fit:cover;
+margin-top:20px;
+}
+
+/* スマホ */
+@media (max-width:600px){
+
+main{
+padding:20px;
+}
+
+#quiz,.result-card{
+padding:20px;
+}
+
+#question{
+font-size:18px;
+}
+
+}
