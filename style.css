@@ -1,0 +1,27 @@
+body{
+font-family:sans-serif;
+text-align:center;
+background:#f5f5f5;
+padding:40px;
+}
+
+#quiz{
+background:white;
+padding:30px;
+width:500px;
+margin:auto;
+border-radius:10px;
+}
+
+button{
+display:block;
+margin:10px auto;
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+}
+
+img{
+width:300px;
+margin-top:20px;
+}
