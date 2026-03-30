@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEAインテリア診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>IKEA版部屋タイプ診断</h1>
+  </header>
+
+  <main>
+
+    <div id="quiz">
+      <p id="progress"></p>
+      <p id="question"></p>
+      <div id="choices"></div>
+    </div>
+
+    <div id="result" style="display:none;">
+      <div class="result-card">
+
+        <h2 class="share-copy">あなたにピッタリの部屋タイプは...</h2>
+
+        <div class="main-image-wrap">
+          <img id="resultImage" src="" alt="診断結果画像">
+          <p class="image-note">※イメージ画像です</p>
+        </div>
+
+        <h2 id="resultTitle"></h2>
+
+        <p id="resultDescription"></p>
+
+        <div class="share-area">
+          <button id="xShareButton" class="share-button x-share-button" type="button">
+            Xでシェア
+          </button>
+
+          <button id="instaShareButton" class="share-button insta-share-button" type="button">
+            Instagramでシェア
+          </button>
+        </div>
+
+        <p class="share-help">
+          Instagramはシェア文をコピーして開きます
+        </p>
+
+        <h3 class="section-title">「おすすめ商品」</h3>
+        <div id="productList" class="product-list"></div>
+
+        <a id="surveyButton" class="survey-button" href="#" target="_blank" rel="noopener noreferrer">
+          アンケートはこちら
+        </a>
+
+        <button class="restart-button" onclick="restartQuiz()">もう一度診断する</button>
+
+      </div>
+    </div>
+
+  </main>
+
+  <div id="mapModal" class="modal" style="display:none;">
+    <div class="modal-inner">
+      <button id="closeModal" class="close-button" type="button">×</button>
+      <img id="mapModalImage" src="" alt="売り場マップ">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
