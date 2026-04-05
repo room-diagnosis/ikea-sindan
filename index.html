@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA版部屋タイプ診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>
+  <span class="sub-title">＼獨協大学プロデュース／</span><br>
+  IKEA版<br class="sp-only">
+  部屋タイプ診断
+</h1>
+  </header>
+
+  <main>
+    <section id="quiz" class="card">
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+      <p id="progress"></p>
+      <p id="question"></p>
+      <div id="choices"></div>
+    </section>
+
+    <section id="loadingScreen" class="card" style="display:none;">
+      <div class="loading-wrap">
+        <p class="loading-text">診断中...</p>
+        <div class="loading-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" style="display:none;">
+      <div class="result-card">
+        <h2 class="share-catch">あなたの部屋タイプは...</h2>
+
+        <div class="main-image-wrap">
+          <img id="resultImage" src="" alt="診断結果画像">
+          <p class="image-note">※イメージ画像です</p>
+        </div>
+
+        <h2 id="resultTitle"></h2>
+
+        <div class="share-highlight">
+          <p id="resultDescription"></p>
+        </div>
+
+        
+
+        <h3 class="section-title">獨協生が惚れたセレクト商品！</h3>
+        <div id="productList" class="product-list"></div>
+
+        <div class="share-tip">
+          Instagramでシェアする場合は、<br>
+          この画面をスクリーンショットして投稿するのがおすすめ！
+        </div>
+
+        <div class="share-area">
+          <button id="xShareButton" class="share-button x-share-button" type="button">Xでシェア</button>
+          <button id="instaShareButton" class="share-button insta-share-button" type="button">Instagramでシェア</button>
+        </div>
+
+        <a id="surveyButton" class="survey-button" href="#" target="_blank" rel="noopener noreferrer">
+          アンケートはこちら
+        </a>
+
+        <button class="restart-button" type="button" onclick="restartQuiz()">もう一度診断する</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="mapModal" class="modal" style="display:none;">
+    <div class="modal-inner">
+      <button id="closeModal" class="close-button" type="button">×</button>
+      <img id="mapModalImage" src="" alt="売り場マップ">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
